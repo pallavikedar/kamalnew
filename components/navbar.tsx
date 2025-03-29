@@ -84,15 +84,7 @@ export default function Navbar() {
 
           {/* Login/Join */}
           <div className="hidden lg:flex items-center">
-            <Link
-              href="/login"
-              className={cn(
-                "font-montserrat text-sm tracking-wider mr-6 hover:text-[#C1A35F] transition-colors",
-                isScrolled ? "text-gray-800" : "text-white",
-              )}
-            >
-              LOGIN / JOIN
-            </Link>
+           
             <Button className="bg-[#C1A35F] hover:bg-[#B39355] text-white rounded-none font-montserrat text-sm tracking-wider">
               BOOK A VENUE
             </Button>
@@ -133,13 +125,7 @@ export default function Navbar() {
                         {link.name}
                       </Link>
                     ))}
-                    <Link
-                      href="/login"
-                      className="font-montserrat text-lg text-white hover:text-[#C1A35F] transition-colors mt-6"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      LOGIN / JOIN
-                    </Link>
+                  
                     <Button
                       className="mt-6 bg-[#C1A35F] hover:bg-[#B39355] text-white rounded-none"
                       onClick={() => setIsMobileMenuOpen(false)}

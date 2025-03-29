@@ -171,64 +171,82 @@ const galleryItem = {
         </div>
       </section>
 
-      {/* Booking Section */}
-      <section className="py-12 bg-[#F5F5F5]">
-        <div className="container mx-auto px-4">
-          <div className="w-6xl mx-auto bg-white shadow-lg p-6 md:p-10 -mt-20 relative z-30">
-            <h2 className="font-cormorant text-2xl md:text-3xl text-center mb-8 font-light">Find Your Perfect Venue</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="space-y-2">
-                <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Name</label>
-                <input
-                  type="text"
-                  className="w-full p-3 border border-gray-300 font-montserrat"
-                  placeholder="Your Name"/>
-              </div>
-              <div className="space-y-2">
-                <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Event Type</label>
-                <select className="w-full p-3 border border-gray-300 font-montserrat">
-                  <option>Wedding</option>
-                  <option>Corporate Event</option>
-                  <option>Birthday</option>
-                  <option>Anniversary</option>
-                </select>
-              </div>
-              <div className="space-y-2">
-                <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Date</label>
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <Button
-                      variant="outline"
-                      className="w-full justify-start text-left font-normal border border-gray-300 rounded-none h-[46px]"
-                    >
-                      <CalendarIcon className="mr-2 h-4 w-4" />
-                      {date ? format(date, "PPP") : <span>Select date</span>}
-                    </Button>
-                  </PopoverTrigger>
-                  <PopoverContent className="w-auto p-0">
-                    <Calendar mode="single" selected={date} onSelect={setDate} initialFocus />
-                  </PopoverContent>
-                </Popover>
-              </div>
-              <div className="space-y-2 ">
-                <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Guests</label>
-                <select className="w-full p-3 border border-gray-300 font-montserrat">
-                  <option>50-100</option>
-                  <option>100-200</option>
-                  <option>200-300</option>
-                  <option>300-500</option>
-                  <option>500+</option>
-                </select>
-              </div>
-            </div>
-            <div className="mt-8 text-center">
-              <Button className="bg-[#C1A35F] hover:bg-[#B39355] text-white rounded-none px-8 py-6 font-montserrat">
-                SEND ENQUIRY
-              </Button>
-            </div>
-          </div>
+     {/* Booking Section */}
+<section className="py-12 bg-[#F5F5F5]">
+  <div className="container mx-auto px-4">
+    <div className="w-6xl mx-auto bg-white shadow-lg p-6 md:p-10 -mt-20 relative z-30 
+      shadow-[0_0_10px_-5px_rgba(255, 166, 0, 0.223),0_0_10px_-5px_rgba(255,0,0,0.3),0_0_10px_-5px_rgba(128,0,128,0.3),0_0_10px_-5px_rgba(0,0,255,0.3)]
+      hover:shadow-[0_0_10px_-5px_rgba(255,165,0,0.4),0_0_10px_-5px_rgba(255,0,0,0.4),0_0_10px_-5px_rgba(128,0,128,0.4),0_0_10px_-5px_rgba(0,0,255,0.4)]
+      transition-all duration-500">
+      
+      <h2 className="font-cormorant text-2xl md:text-3xl text-center mb-8 font-light">Find Your Perfect Venue</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="space-y-2">
+          <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Name</label>
+          <input
+            type="text"
+            className="w-full p-3 border border-gray-300 font-montserrat"
+            placeholder="Your Name"/>
         </div>
-      </section>
+        <div className="space-y-2">
+          <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Mobile Number</label>
+          <input
+            type="number"
+            className="w-full p-3 border border-gray-300 font-montserrat"
+            placeholder="Mobile Number"/>
+        </div>
+        <div className="space-y-2">
+          <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Email</label>
+          <input
+            type="email"
+            className="w-full p-3 border border-gray-300 font-montserrat"
+            placeholder="Email"/>
+        </div>
+        <div className="space-y-2">
+          <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Event Type</label>
+          <select className="w-full p-3 border border-gray-300 font-montserrat">
+            <option>Wedding</option>
+            <option>Corporate Event</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+          </select>
+        </div>
+        <div className="space-y-2">
+          <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Date</label>
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button
+                variant="outline"
+                className="w-full justify-start text-left font-normal border border-gray-300 rounded-none h-[46px]"
+              >
+                <CalendarIcon className="mr-2 h-4 w-4" />
+                {date ? format(date, "PPP") : <span>Select date</span>}
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className="w-auto p-0">
+              <Calendar mode="single" selected={date} onSelect={setDate} initialFocus />
+            </PopoverContent>
+          </Popover>
+        </div>
+        <div className="space-y-2">
+          <label className="font-montserrat text-sm font-medium uppercase tracking-wider">Guests</label>
+          <select className="w-full p-3 border border-gray-300 font-montserrat">
+            <option>50-100</option>
+            <option>100-200</option>
+            <option>200-300</option>
+            <option>300-500</option>
+            <option>500+</option>
+          </select>
+        </div>
+      </div>
+      <div className="mt-8 text-center">
+        <Button className="bg-[#C1A35F] hover:bg-[#B39355] text-white rounded-none px-8 py-6 font-montserrat">
+          SEND ENQUIRY
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

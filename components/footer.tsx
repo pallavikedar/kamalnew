@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0F1922] text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-12">
           {/* Column 1 - About */}
           <div>
             <h3 className="font-cormorant text-xl mb-6 font-light">KAMAL CELEBRATIONS</h3>
@@ -70,42 +70,26 @@ export default function Footer() {
             <ul className="space-y-4 font-cormorant text-gray-400">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-3 mt-1 text-[#C1A35F]" />
-                <span>123 Luxury Avenue, Prestige District, New Delhi, 110001</span>
+                <span>Plot no 4, Rajeshwar Nagar, Besa-Pipla road, Nagpur, 440034</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-3 text-[#C1A35F]" />
-                <span>+91 98765 43210</span>
+                <span>9209841329/9860945554</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-3 text-[#C1A35F]" />
-                <span>events@royalbanquets.com</span>
+                <span>kamalcelebrationsgroup@gmail.com</span>
               </li>
             </ul>
           </div>
 
-          {/* Column 4 - Newsletter */}
-          <div>
-            <h3 className="font-montserrat text-sm uppercase tracking-wider mb-6">Newsletter</h3>
-            <p className="font-cormorant text-gray-400 mb-4">
-              Subscribe to receive updates on special offers and events.
-            </p>
-            <div className="space-y-3">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                className="bg-[#1A2530] border-[#2A3540] text-white rounded-none"
-              />
-              <Button className="w-full bg-[#C1A35F] hover:bg-[#B39355] text-white rounded-none font-montserrat text-sm tracking-wider">
-                SUBSCRIBE
-              </Button>
-            </div>
-          </div>
+        
         </div>
 
         <div className="border-t border-[#2A3540] pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="font-montserrat text-sm text-gray-500 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Royal Banquets. All rights reserved.
+              &copy; {new Date().getFullYear()} Kamal Celebrations. All rights reserved.
             </p>
             <div className="flex space-x-6 font-montserrat text-xs text-gray-500">
               <Link href="/terms" className="hover:text-[#C1A35F] transition-colors">
