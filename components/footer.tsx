@@ -32,35 +32,31 @@ export default function Footer() {
             <h3 className="font-montserrat text-sm uppercase tracking-wider mb-6">Quick Links</h3>
             <ul className="space-y-3 font-cormorant text-gray-400">
               <li>
-                <Link href="/venues" className="hover:text-[#C1A35F] transition-colors">
-                  Our Venues
-                </Link>
-              </li>
-              <li>
-                <Link href="/events" className="hover:text-[#C1A35F] transition-colors">
-                  Event Types
-                </Link>
-              </li>
-              <li>
-                <Link href="/dining" className="hover:text-[#C1A35F] transition-colors">
-                  Dining Options
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery" className="hover:text-[#C1A35F] transition-colors">
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-[#C1A35F] transition-colors">
+                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-[#C1A35F] transition-colors">
-                  Contact
+                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
+                  Contact Us
                 </Link>
               </li>
+              <li>
+                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
+                  Events
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
+                  Facility
+                </Link>
+              </li>
+              
             </ul>
           </div>
 

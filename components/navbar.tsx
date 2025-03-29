@@ -50,7 +50,7 @@ export default function Navbar() {
               <div className="w-30 h-30 relative mr-2">
                 {/* <div className="absolute inset-0 border-2 border-white rounded-full flex items-center justify-center"> */}
                  
-                 <Image src={logo} alt="Kamal Celebrations" width={70} height={70} />
+                 <Image className=" bg-white" src={logo} alt="Kamal Celebrations" width={70} height={70} />
                 {/* </div> */}
               </div>
               <h1
