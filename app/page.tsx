@@ -36,6 +36,7 @@ import g11 from '../public/g11.jpeg'
 import g12 from '../public/g12.jpeg'
 import g13 from '../public/g13.jpeg'
 import g14 from '../public/g14.jpeg'
+import FloatingButtons from "@/components/social"
 
 
 
@@ -134,6 +135,7 @@ const galleryItem = {
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
+      <FloatingButtons/>
       <section className="relative h-screen">
         <div className="absolute inset-0 bg-black/30 z-10"></div>
         <div className="absolute inset-0 z-0 animate-zoom">
@@ -164,11 +166,7 @@ const galleryItem = {
           </motion.div>
         </motion.div>
 
-        <div className="absolute bottom-10 right-10 z-20">
-          <button className="bg-[#C1A35F] rounded-full p-3 text-white hover:bg-[#B39355] transition-colors">
-            <Search className="h-6 w-6" />
-          </button>
-        </div>
+      
       </section>
 
      {/* Booking Section */}
