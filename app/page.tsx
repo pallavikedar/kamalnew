@@ -37,6 +37,7 @@ import g12 from '../public/g12.jpeg'
 import g13 from '../public/g13.jpeg'
 import g14 from '../public/g14.jpeg'
 import FloatingButtons from "@/components/social"
+import EnquiryForm from "@/components/enquiryform"
 
 
 
@@ -170,7 +171,7 @@ const galleryItem = {
       </section>
 
      {/* Booking Section */}
-<section className="py-12 bg-[#F5F5F5]">
+{/* <section className="py-12 bg-[#F5F5F5]">
   <div className="container mx-auto px-4">
     <div className="w-6xl mx-auto bg-white shadow-lg p-6 md:p-10 -mt-20 relative z-30 
       shadow-[0_0_10px_-5px_rgba(255, 166, 0, 0.223),0_0_10px_-5px_rgba(255,0,0,0.3),0_0_10px_-5px_rgba(128,0,128,0.3),0_0_10px_-5px_rgba(0,0,255,0.3)]
@@ -244,12 +245,12 @@ const galleryItem = {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
-
+<EnquiryForm />
 
     {/* Venues Section */}
-<section className="py-20">
+<section className="py-20" id="event">
   <div className="container mx-auto px-4">
     <motion.div
       className="text-center mb-16"
@@ -317,7 +318,7 @@ const galleryItem = {
   {/* <div className="absolute top-0 left-0 w-full h-1 bg-[#C1A35F]"></div>
   <div className="absolute bottom-0 right-0 w-32 h-32 border-r-2 border-b-2 border-[#C1A35F]"></div> */}
 
-  <div className="w-full mx-auto bg-white  overflow-hidden">
+  <div id="about" className="w-full mx-auto bg-white  overflow-hidden">
     {/* Hero Section */}
     <div className="relative h-96  overflow-hidden">
       <Image
@@ -380,7 +381,7 @@ const galleryItem = {
     </div>
 
     {/* Facilities Section */}
-    <div className="bg-[#faf9f7] p-12 border-t border-[#e8e3d9]">
+    <div className="bg-[#faf9f7] p-12 border-t border-[#e8e3d9]" id="facility">
       <motion.div
         className="text-center mb-12"
         initial={{ opacity: 0 }}
@@ -558,7 +559,7 @@ const galleryItem = {
       </section>
 
       {/* Gallery Section */}
-<section className="py-20 bg-[#F5F5F5]">
+<section className="py-20 bg-[#F5F5F5]"  id="gallary">
   <div className="container mx-auto px-4">
     <motion.div
       className="text-center mb-16"

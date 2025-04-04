@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Royal Banquets | Luxury Event Venues",
+  title: "kamal celebrations | Luxury Event Venues",
   description:
     "Experience luxury and elegance at our premium banquet halls for weddings, corporate events, and celebrations.",
     generator: 'v0.dev'

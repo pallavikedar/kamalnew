@@ -87,17 +87,7 @@ export default function Footer() {
             <p className="font-montserrat text-sm text-gray-500 mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Kamal Celebrations. All rights reserved.
             </p>
-            <div className="flex space-x-6 font-montserrat text-xs text-gray-500">
-              <Link href="/terms" className="hover:text-[#C1A35F] transition-colors">
-                Terms & Conditions
-              </Link>
-              <Link href="/privacy" className="hover:text-[#C1A35F] transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/sitemap" className="hover:text-[#C1A35F] transition-colors">
-                Sitemap
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>

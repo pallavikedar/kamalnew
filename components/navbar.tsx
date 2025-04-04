@@ -8,8 +8,10 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import logo from "@/public/kamal-logo_1.png"
-
+import { useRouter } from "next/navigation"
 export default function Navbar() {
+  const router = useRouter();
+
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -27,13 +29,16 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { name: "ABOUT US", href: "#" },
-    { name: "CONTACT US", href: "#" },
-    { name: "EVENTS", href: "#" },
-    { name: "GALLARY", href: "#" },
-    { name: "FACILITY", href: "#"},
+    { name: "ABOUT US", href: "#about" },
+    { name: "CONTACT US", href: "#contact" },
+    { name: "EVENTS", href: "#event" },
+    { name: "GALLARY", href: "#gallary" },
+    { name: "FACILITY", href: "#facility"},
    
   ]
+  const handleClick = () => {
+    router.push('#contact');
+  }
 
   return (
     <header
@@ -81,11 +86,13 @@ export default function Navbar() {
               </div>
             ))}
           </nav>
+          
+
 
           {/* Login/Join */}
           <div className="hidden lg:flex items-center">
            
-            <Button className="bg-[#C1A35F] hover:bg-[#B39355] text-white rounded-none font-montserrat text-sm tracking-wider">
+            <Button onClick={handleClick} className="bg-[#C1A35F] hover:bg-[#B39355] text-white rounded-none font-montserrat text-sm tracking-wider">
               BOOK A VENUE
             </Button>
           </div>
