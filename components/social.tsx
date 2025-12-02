@@ -8,7 +8,7 @@ const FloatingButtons = () => {
       <div className="fixed bottom-8 right-8 z-[9999] flex flex-col gap-4">
         {/* WhatsApp Button */}
         <motion.a
-          href="https://wa.me/9860945554" // Replace with your number
+          href="https://wa.me/9820296914" // Replace with your number
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#C1A35F] text-white p-4 rounded-full shadow-xl flex items-center justify-center"
@@ -33,7 +33,7 @@ const FloatingButtons = () => {
 
         {/* Call Button */}
         <motion.a
-          href="tel:9209841329" // Replace with your number
+          href="tel:8806081348" // Replace with your number
           className="bg-[#C1A35F] text-white p-4 rounded-full shadow-xl flex items-center justify-center"
           initial={{ scale: 0, opacity: 0, y: 50 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
