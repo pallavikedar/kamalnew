@@ -152,7 +152,7 @@ export default function Home() {
         </div>
         <motion.div
           className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4 top-[10%]"
-          initial="hidden"
+          initial={false}
           animate={isLoaded ? "visible" : "hidden"}
           variants={fadeIn}
         >
@@ -263,7 +263,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
-            initial="hidden"
+            initial={false}
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
@@ -279,7 +279,7 @@ export default function Home() {
           {/* Display First 3 Venues */}
           <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
-            initial="hidden"
+            initial={false}
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerChildren}
@@ -293,7 +293,7 @@ export default function Home() {
           {showAllVenues && (
             <motion.div
               className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8"
-              initial="hidden"
+              initial={false}
               whileInView="visible"
               viewport={{ once: true }}
               variants={staggerChildren}
@@ -440,7 +440,7 @@ export default function Home() {
             </div>
 
             {/* LOCATION */}
-          <div className="p-12"> <motion.h2 className="font-cormorant text-4xl text-gray-800 mb-12 text-center font-bold" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} > How to <span className="text-[#dc2626]">Reach Us</span> </motion.h2> <motion.div className="grid md:grid-cols-3 gap-8" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerChildren} > {[ { icon: <FaMapMarkerAlt className="text-3xl" />, title: "Location", details: "Besa-Pipla, Nagpur", extra: "Near Pipla Square, Opposite City Mall" }, { icon: <FaPlane className="text-3xl" />, title: "Airport", details: "7 km from Nagpur International Airport", extra: "~15 minutes drive" }, { icon: <FaTrain className="text-3xl" />, title: "Railway Station", details: "11 km from Nagpur Station", extra: "~25 minutes drive" } ].map((item, index) => ( <motion.div key={index} className="bg-white p-8 rounded-lg shadow-sm border border-[#e8e3d9] text-center hover:shadow-md transition-all" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} > <div className="text-[#dc2626] mb-4">{item.icon}</div> <h3 className="font-montserrat text-lg font-bold uppercase tracking-wider mb-3">{item.title}</h3> <p className="font-cormorant text-black-600 mb-2">{item.details}</p> <p className="font-cormorant text-sm text-[#dc2626]">{item.extra}</p> </motion.div> ))} </motion.div> </div>
+          <div className="p-12"> <motion.h2 className="font-cormorant text-4xl text-gray-800 mb-12 text-center font-bold" initial={false} whileInView="visible" viewport={{ once: true }} variants={fadeIn} > How to <span className="text-[#dc2626]">Reach Us</span> </motion.h2> <motion.div className="grid md:grid-cols-3 gap-8" initial={false} whileInView="visible" viewport={{ once: true }} variants={staggerChildren} > {[ { icon: <FaMapMarkerAlt className="text-3xl" />, title: "Location", details: "Besa-Pipla, Nagpur", extra: "Near Pipla Square, Opposite City Mall" }, { icon: <FaPlane className="text-3xl" />, title: "Airport", details: "7 km from Nagpur International Airport", extra: "~15 minutes drive" }, { icon: <FaTrain className="text-3xl" />, title: "Railway Station", details: "11 km from Nagpur Station", extra: "~25 minutes drive" } ].map((item, index) => ( <motion.div key={index} className="bg-white p-8 rounded-lg shadow-sm border border-[#e8e3d9] text-center hover:shadow-md transition-all" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} > <div className="text-[#dc2626] mb-4">{item.icon}</div> <h3 className="font-montserrat text-lg font-bold uppercase tracking-wider mb-3">{item.title}</h3> <p className="font-cormorant text-black-600 mb-2">{item.details}</p> <p className="font-cormorant text-sm text-[#dc2626]">{item.extra}</p> </motion.div> ))} </motion.div> </div>
 
           </div>
         </div>
@@ -533,7 +533,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
-            initial="hidden"
+            initial={false}
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
@@ -553,7 +553,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
-            initial="hidden"
+            initial={false}
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
@@ -570,7 +570,7 @@ export default function Home() {
               <motion.div
                 key={image.id}
                 className="relative h-64 md:h-80 overflow-hidden group"
-                initial="hidden"
+                initial={false}
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={galleryItem}
@@ -630,7 +630,7 @@ export default function Home() {
   <div className="relative container mx-auto px-6 text-center">
     <motion.div
       className="max-w-3xl mx-auto"
-      initial="hidden"
+      initial={false}
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeIn}
