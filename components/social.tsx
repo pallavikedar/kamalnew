@@ -11,7 +11,7 @@ const FloatingButtons = () => {
           href="https://wa.me/9820296914" // Replace with your number
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#C1A35F] text-white p-4 rounded-full shadow-xl flex items-center justify-center"
+          className="bg-[#ce1211] text-white p-4 rounded-full shadow-xl flex items-center justify-center"
           initial={{ scale: 0, opacity: 0, y: 50 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0, opacity: 0, y: 50 }}
@@ -34,7 +34,7 @@ const FloatingButtons = () => {
         {/* Call Button */}
         <motion.a
           href="tel:8806081348" // Replace with your number
-          className="bg-[#C1A35F] text-white p-4 rounded-full shadow-xl flex items-center justify-center"
+          className="bg-[#ce1211] text-white p-4 rounded-full shadow-xl flex items-center justify-center"
           initial={{ scale: 0, opacity: 0, y: 50 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0, opacity: 0, y: 50 }}

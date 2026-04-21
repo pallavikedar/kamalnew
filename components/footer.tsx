@@ -1,97 +1,127 @@
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import { Instagram, Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0F1922] text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-12">
-          {/* Column 1 - About */}
+    <footer className="bg-[#0F1922] text-white pt-20 pb-10">
+      <div className="container mx-auto px-6">
+
+        {/* Top Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+          {/* Brand */}
           <div>
-            <h3 className="font-cormorant text-xl mb-6 font-light">KAMAL CELEBRATIONS</h3>
-            <p className="font-cormorant text-gray-400 mb-6">
-              Creating unforgettable celebrations with elegance and sophistication for over two decades.
+            <h2 className="text-2xl font-semibold tracking-wide mb-4">
+              KAMAL CELEBRATIONS
+            </h2>
+            <div className="w-12 h-[2px] bg-[#dc2626] mb-4"></div>
+
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Creating unforgettable celebrations with elegance, luxury, and timeless memories for over two decades.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-[#C1A35F] transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-[#C1A35F] transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-[#C1A35F] transition-colors">
-                <Twitter size={20} />
+
+            <div className="flex gap-4 mt-6">
+              <a
+                href="https://www.instagram.com/kamalcelebrations/"
+                target="_blank"
+                className="p-2 border border-gray-600 rounded-full hover:bg-[#dc2626] hover:border-[#dc2626] transition duration-300"
+              >
+                <Instagram size={18} />
               </a>
             </div>
           </div>
 
-          {/* Column 2 - Quick Links */}
+          {/* Quick Links */}
           <div>
-            <h3 className="font-montserrat text-sm uppercase tracking-wider mb-6">Quick Links</h3>
-            <ul className="space-y-3 font-cormorant text-gray-400">
-              <li>
-                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
-                  Events
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-[#C1A35F] transition-colors">
-                  Facility
-                </Link>
-              </li>
-              
+            <h3 className="text-sm uppercase tracking-widest mb-6 text-gray-300">
+              Quick Links
+            </h3>
+
+            <ul className="space-y-3 text-gray-400 text-sm">
+              {["About Us", "Events", "Gallery", "Facility", "Contact"].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href="#"
+                    className="relative hover:text-[#dc2626] transition duration-300 
+                    after:block after:w-0 after:h-[1px] after:bg-[#dc2626] 
+                    after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Column 3 - Contact */}
+          {/* Contact */}
           <div>
-            <h3 className="font-montserrat text-sm uppercase tracking-wider mb-6">Contact Us</h3>
-            <ul className="space-y-4 font-cormorant text-gray-400">
-              <li className="flex items-start">
-                <MapPin size={18} className="mr-3 mt-1 text-[#C1A35F]" />
-                <span>Plot no 4, Rajeshwar Nagar, Besa-Pipla road, Nagpur, 440034</span>
+            <h3 className="text-sm uppercase tracking-widest mb-6 text-gray-300">
+              Contact
+            </h3>
+
+            <ul className="space-y-5 text-gray-400 text-sm">
+
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="text-[#dc2626] mt-1" />
+                <span>
+                  Plot no 4, Rajeshwar Nagar,  
+                  Besa-Pipla Road, Nagpur - 440034
+                </span>
               </li>
-              <li className="flex items-center">
-                <Phone size={18} className="mr-3 text-[#C1A35F]" />
-                <span>8806081348/9820296914</span>
+
+              <li className="flex items-center gap-3">
+                <Phone size={18} className="text-[#dc2626]" />
+                <span>8806081348 / 9820296914</span>
               </li>
-              <li className="flex items-center">
-                <Mail size={18} className="mr-3 text-[#C1A35F]" />
+
+              <li className="flex items-center gap-3">
+                <Mail size={18} className="text-[#dc2626]" />
                 <span>kamalcelebrationsgroup@gmail.com</span>
               </li>
+
             </ul>
           </div>
 
-        
-        </div>
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-sm uppercase tracking-widest mb-6 text-gray-300">
+              Stay Updated
+            </h3>
 
-        <div className="border-t border-[#2A3540] pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-montserrat text-sm text-gray-500 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Kamal Celebrations. All rights reserved.
+            <p className="text-gray-400 text-sm mb-4">
+              Subscribe to get updates on events and offers.
             </p>
-            
+
+            <div className="flex items-center bg-[#1A2733] rounded-md overflow-hidden">
+              <input
+                type="email"
+                placeholder="Your email"
+                className="bg-transparent px-4 py-3 text-sm w-full outline-none text-white"
+              />
+              <button className="bg-[#dc2626] px-4 py-3 text-white text-sm font-medium hover:bg-red-700 transition">
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
+
+        {/* Bottom */}
+        <div className="border-t border-[#2A3540] pt-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+          <p>
+            © {new Date().getFullYear()} Kamal Celebrations. All rights reserved.
+          </p>
+
+          <div className="flex gap-6 mt-4 md:mt-0">
+            <Link href="#" className="hover:text-[#dc2626] transition">
+              Privacy Policy
+            </Link>
+            <Link href="#" className="hover:text-[#dc2626] transition">
+              Terms & Conditions
+            </Link>
+          </div>
+        </div>
+
       </div>
     </footer>
   )
 }
-

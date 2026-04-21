@@ -55,8 +55,8 @@ export default function TestimonialSlider() {
   }
 
   return (
-    <div className="relative max-w-4xl mx-auto">
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 md:-translate-x-full z-10">
+    <div className="relative  mx-auto">
+      {/* <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 md:-translate-x-full z-10">
         <button
           onClick={prev}
           className="bg-white shadow-md rounded-full p-2 text-[#C1A35F] hover:text-[#B39355] transition-colors"
@@ -108,7 +108,12 @@ export default function TestimonialSlider() {
             aria-label={`Go to testimonial ${index + 1}`}
           />
         ))}
-      </div>
+      </div> */}
+
+
+      {/* <!-- Elfsight Google Reviews | Untitled Google Reviews --> */}
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div className="elfsight-app-8e1915a8-d638-4ca7-837b-7f15da7fca21" data-elfsight-app-lazy></div>
     </div>
   )
 }

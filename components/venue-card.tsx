@@ -34,12 +34,12 @@ export default function VenueCard({ venue }: VenueCardProps) {
         />
       </div>
       <div className="p-6 border-t border-gray-100">
-        <h3 className="font-cormorant text-xl mb-2 font-light">{venue.name}</h3>
-        <p className="font-cormorant text-gray-600 mb-3">{venue.description}</p>
-        <p className="font-montserrat text-sm text-[#C1A35F] mb-4">{venue.capacity}</p>
+        <h3 className="font-cormorant text-2xl mb-2 font-bold">{venue.name}</h3>
+        <p className="font-cormorant font-dark text-black-800 mb-3">{venue.description}</p>
+        {/* <p className="font-montserrat text-sm text-[#ce1211] mb-4">{venue.capacity}</p> */}
         <Button
           variant="outline"
-          className="rounded-none border-[#C1A35F] text-[#C1A35F] hover:bg-[#C1A35F] hover:text-white transition-colors group font-montserrat text-sm tracking-wider"
+          className="rounded-none border-[#ce1211] text-[#ce1211] hover:bg-[#ce1211] hover:text-white transition-colors group font-montserrat text-sm tracking-wider"
         >
           EXPLORE VENUE
           <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
